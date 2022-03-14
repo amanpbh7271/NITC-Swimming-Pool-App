@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "272274197591",
+    "firebase_url": "https://pool-management.firebaseio.com",
+    "project_id": "pool-management",
+    "storage_bucket": "pool-management.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:272274197591:android:d05d9b1800ad35edbce712",
+        "android_client_info": {
+          "package_name": "com.kapil.poolmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "272274197591-0ap9p9j3l7uoa397pav8ov956k0tc67e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgLqiUoogFbXDIT9viSq_pqlewhvgqfQM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "272274197591-0ap9p9j3l7uoa397pav8ov956k0tc67e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

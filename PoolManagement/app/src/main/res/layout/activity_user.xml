@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_google_signin_btn_text_dark_default"
+    android:clipToPadding="false"
+    tools:context=".User">
+
+        <TextView
+            android:id="@+id/text_user"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center_horizontal"
+            android:text="@string/text_user"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/toolbar_checkin"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_checkin" />
+
+        <EditText
+            android:id="@+id/editText_intvisits_user"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Remaining visits"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/et_validityDate"
+            app:layout_constraintEnd_toEndOf="@+id/spinner4"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/spinner4"
+            app:layout_constraintTop_toBottomOf="@+id/spinner4" />
+
+        <Button
+            android:id="@+id/button_user"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#5BDA60"
+            android:onClick="newuser"
+            android:text="@string/button_user"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/et_validityDate"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/et_validityDate"
+            app:layout_constraintTop_toBottomOf="@+id/et_validityDate" />
+
+        <EditText
+            android:id="@+id/editText_contact_user"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/editText_contact_user"
+            android:inputType="phone"
+            app:layout_constraintBottom_toTopOf="@+id/spinner4"
+            app:layout_constraintEnd_toEndOf="@+id/editText_name_user"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editText_name_user"
+            app:layout_constraintTop_toBottomOf="@+id/editText_name_user" />
+
+        <Spinner
+            android:id="@+id/spinner4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinner_items"
+            app:layout_constraintBottom_toTopOf="@+id/editText_intvisits_user"
+            app:layout_constraintEnd_toEndOf="@+id/editText_contact_user"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editText_contact_user"
+            app:layout_constraintTop_toBottomOf="@+id/editText_contact_user" />
+
+        <EditText
+            android:id="@+id/editText_name_user"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/editText_name_user"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/editText_contact_user"
+            app:layout_constraintEnd_toEndOf="@+id/spinner2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/spinner2"
+            app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/category_spinner"
+            app:layout_constraintBottom_toTopOf="@+id/editText_name_user"
+            app:layout_constraintEnd_toEndOf="@+id/editText_card_user"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editText_card_user"
+            app:layout_constraintTop_toBottomOf="@+id/editText_card_user" />
+
+        <EditText
+            android:id="@+id/et_validityDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/et_validityDate"
+            android:inputType="date"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/button_user"
+            app:layout_constraintEnd_toEndOf="@+id/editText_intvisits_user"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editText_intvisits_user"
+            app:layout_constraintTop_toBottomOf="@+id/editText_intvisits_user"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/editText_card_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/editText_card_user"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/spinner2"
+            app:layout_constraintEnd_toEndOf="@+id/text_user"
+            app:layout_constraintHorizontal_bias="0.521"
+            app:layout_constraintStart_toStartOf="@+id/text_user"
+            app:layout_constraintTop_toBottomOf="@+id/text_user" />
+
+
+        <!-- <EditText
+        android:id="@+id/editText_validity_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="@string/editText_validity_user"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editText_visits_user"
+        app:layout_constraintTop_toBottomOf="@+id/editText_visits_user" /> -->
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_checkin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#8797F3"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:popupTheme="@style/Theme.AppCompat.Light"
+            app:title="Pool Management" />
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
